@@ -1,0 +1,20 @@
+.buttons-container {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100vw;
+
+	.button {
+		text-align: center;
+		border: 1px solid #3E7CB1;
+		font-size: 0.8em;
+		width: 20vw;
+
+		&:hover {
+			background: rgba(62, 124, 177, 0.5);
+		}
+
+		p {
+			pointer-events: none;
+		}
+	}
+}
