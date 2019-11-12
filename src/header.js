@@ -12,21 +12,20 @@ const Header = () => {
 		'G.'
 	]
 
+
 	useEffect(() => {
 		const name = document.getElementById('name')
-		let previous = ''
-		const random = () => {
-			return names[Math.round(Math.random()*(names.length-1))]
-		}
-		const randomize = (event) => {
+		let num = 1
+		const select = (event) => {
 			if (event.animationName === 'typing') { 
 				const check = () => {
-					let newText = random()
-					if (newText != previous) {
+					if (num < names.length) {
+						let newText = names[num]
 						name.innerText = newText
-						previous = newText
+						num += 1
 					}
 					else {
+						num = 0
 						check()
 					}
 				}
@@ -36,7 +35,7 @@ const Header = () => {
 				{}
 			}
 		}
-		name.addEventListener('animationiteration', (e) => randomize(e))
+		name.addEventListener('animationiteration', (e) => select(e))
 	}, [])
 
 	return (

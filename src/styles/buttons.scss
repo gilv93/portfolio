@@ -23,4 +23,9 @@
 			pointer-events: none;
 		}
 	}
+
+	.active {
+		@extend .button;
+		background: rgba(62, 124, 177, 0.8);
+	}
 }

@@ -3,12 +3,26 @@ import './styles/text.scss'
 import About from './about'
 
 
-const Text = () => {
+const Text = ({ category }) => {
+
+	const textShow = () => {
+		if (category === 'About Me') {
+			return (
+				<About />
+			)
+		}
+		else {
+			return (
+				<div className='default'>
+						<h1 id='default'>Let's make a website together.</h1>
+				</div>
+			)
+		}
+	}
+
 	return (
 		<div className='text'>
-			<div className='default'>
-				<h1 id='default'>Let's make a website together.</h1>
-			</div>
+			{textShow()}
 		</div>
 	)
 }
