@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles/App.scss';
 import Header from './header'
 import Buttons from './buttons'
@@ -15,11 +15,10 @@ const App = () => {
 	]
 
 	const change = (e) => {
-		try {
+		if (category != '') {
 			document.getElementById(category).className='button'
-		}
-		catch {
-			{}
+			document.getElementById(category + '-sec').style.right = '100vw'
+			document.getElementById(category + '-sec').style.transform = 'translateX(100vw)'
 		}
 		setCategory(e.target.id)
 		e.target.className='active'

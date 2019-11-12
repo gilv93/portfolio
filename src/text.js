@@ -5,7 +5,7 @@ import About from './about'
 
 const Text = ({ category }) => {
 
-	const textShow = () => {
+	/*const textShow = () => {
 		if (category === 'About Me') {
 			return (
 				<About />
@@ -18,10 +18,24 @@ const Text = ({ category }) => {
 				</div>
 			)
 		}
+	}*/
+
+	const textShow = () => {
+		if (category === '') {
+			return (
+			<div className='default'>
+				<h1 id='default'>Let's make a website together.</h1>
+			</div>
+			)
+		}
+		else {
+			{}
+		}
 	}
 
 	return (
 		<div className='text'>
+			<About category={category} />
 			{textShow()}
 		</div>
 	)
