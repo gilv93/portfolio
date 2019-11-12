@@ -1,10 +1,10 @@
 .projects {
-	margin-left: 4vw;
-	margin-right: 200vw;
+	margin-left: 200vw;
+	margin-right: 4vw;
 	height: 100%;
 	position: absolute;
 	width: 92vw;
-	transition: margin-right 0.5s linear;
+	transition: margin-left 0.5s linear;
 
 	h3 {
 		text-align: center;
@@ -24,6 +24,6 @@
 	}
 
 	&.active {
-		margin-right: 4vw;
+		margin-left: 4vw;
 	}
 }
