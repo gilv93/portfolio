@@ -14,16 +14,6 @@ const App = () => {
 		'Contact Me'
 	]
 
-/*	useEffect(() => {
-		try {
-			document.getElementById(category + '-sec').style.right = '100vw'
-			document.getElementById(category + '-sec').style.transform = 'translateX(150vw)'
-		}
-		catch {
-			{}
-		}
-	}, [category])*/
-
 	const change = (e) => {
 		try {
 			document.getElementById(category + '-sec').classList.toggle('active')
@@ -32,9 +22,6 @@ const App = () => {
 		catch {
 			{}
 		}
-/*		if (category === 'default') {
-			document.getElementById('app-sec').style.overflowY='visible'
-		}*/
 		setCategory(e.target.id)
 		e.target.className='active'
 		document.getElementById(e.target.id + '-sec').classList.toggle('active')

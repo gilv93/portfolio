@@ -21,7 +21,7 @@ const About = () => {
 			think they're stuck in a career they don't truly like and are afraid to move on; I hope I can motivate others
 			like others have for me in taking a plunge into something totally new and love every moment of it.</p>
 			<br></br>
-			<p>Thank you, for reading my story. - <span class='name'>G.V.</span></p>
+			<p>Thank you, for reading my story. - <span className='name'>G.V.</span></p>
 		</div>
 	)
 }

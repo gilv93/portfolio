@@ -3,7 +3,8 @@
 	height: 100%;
 	position: absolute;
 	width: 92%;
-	transition: margin-left 0.5s linear;
+	transition: margin-left 0.5s linear, margin-right 0.5s linear;
+	overflow-y: scroll;
 
 	h3 {
 		text-align: center;
@@ -24,5 +25,39 @@
 
 	&.active {
 		margin-left: 0;
+	}
+
+	.skills-sec {
+
+		p {
+			text-align: center;
+		}
+
+		h4 {
+			text-align: center;
+			font-size: 1.4em;
+		}
+
+		.skills {
+			display: flex;
+			font-size: 0.8em;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.skill-cont {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 6em;
+			width: 5em;
+			margin: 0.5em;
+			justify-content: center;
+
+			svg {
+				fill: #F17300;
+			}
+		}
 	}
 }
