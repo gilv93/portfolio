@@ -3,7 +3,7 @@ import './styles/projects.scss'
 
 const Projects = () => {
 	return (
-		<div className='projects' id={'Projects-sec'}>
+		<div className='projects' id='Projects-sec'>
 			<p>THIS WORKS!</p>
 		</div>
 	)

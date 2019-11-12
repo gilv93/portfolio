@@ -1,0 +1,29 @@
+.contact {
+	margin-left: 200vw;
+	height: 100%;
+	position: absolute;
+	width: 92%;
+	transition: margin-left 0.5s linear;
+	overflow-y: scroll;
+
+	h3 {
+		text-align: center;
+		font-size: 1.6em;
+	}
+
+	p {
+		font-size: 1.2em;
+		text-align: left;
+		margin: 0;
+		line-height: 1.5em;
+	}
+
+	.name {
+		color: #F17300;
+		font-weight: 1000;
+	}
+
+	&.active {
+		margin-left: 0;
+	}
+}
