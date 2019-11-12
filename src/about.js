@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles/about.scss'
 
-const About = ({ category }) => {
+const About = () => {
 	return (
 		<div className='about' id={'About Me-sec'}>
 			<h3>My Story</h3>
