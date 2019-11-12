@@ -8,9 +8,11 @@ const App = () => {
 
 	return (
 		<div className="app">
-			<Header />
-			<hr></hr>
-			<Buttons />
+			<div className='premiere'>
+				<Header />
+				<hr></hr>
+				<Buttons />
+			</div>
 			<Text />
 		</div>
 	);

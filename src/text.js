@@ -6,7 +6,9 @@ import About from './about'
 const Text = () => {
 	return (
 		<div className='text'>
-			<About />
+			<div className='default'>
+				<h1 id='default'>Let's make a website together.</h1>
+			</div>
 		</div>
 	)
 }
