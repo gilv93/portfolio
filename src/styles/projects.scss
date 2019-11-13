@@ -5,6 +5,7 @@
 	width: 92%;
 	transition: margin-left 0.5s linear, margin-right 0.5s linear;
 	overflow-y: scroll;
+	overflow-x: hidden;
 
 	h3 {
 		text-align: center;
@@ -60,6 +61,14 @@
 			svg {
 				fill: #F17300;
 			}
+		}
+	}
+
+	.projects-sec {
+
+		img {
+			height: 5em;
+			width: 8em;
 		}
 	}
 }

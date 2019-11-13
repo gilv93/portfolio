@@ -17,11 +17,11 @@ const About = () => {
 			<br></br>
 			<p>After four years of working myself up, in August of 2019 I decided to leave my job as a chemist and focus
 			on a career in Front End Development. I'm ecstatic to continually add to this growing list of projects and look
-			back on them in the future. I hope I can become another success story that people can look to when they
+			back on them with fondness in the future. I hope I can become another success story that people can look to when they
 			think they're stuck in a career they don't truly like and are afraid to move on; I hope I can motivate others
 			like others have for me in taking a plunge into something totally new and love every moment of it.</p>
 			<br></br>
-			<p>Thank you, for reading my story. - <span className='name'>G.V.</span></p>
+			<p>Thank you, for reading my story, - <span className='name'>G.V.</span></p>
 		</div>
 	)
 }

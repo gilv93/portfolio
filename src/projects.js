@@ -33,6 +33,25 @@ const Projects = () => {
 			svg: <svg role="img" width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>NPM icon</title><path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H5.334v-4H3.999v4H1.335V8.667h5.331v5.331zm4 0v1.336H8.001V8.667h5.334v5.332h-2.669v-.001zm12.001 0h-1.33v-4h-1.336v4h-1.335v-4h-1.33v4h-2.671V8.667h8.002v5.331zM10.665 10H12v2.667h-1.335V10z"/></svg>
 		}
 	]
+
+	const projects = [
+		{
+			name: 'NETFLUX',
+			image: '../static/images/NETFLUX.png',
+			description: 'A netflix clone I made using React. It utilizes the TMDB(The Movie Database) and Youtube API.',
+			demo: 'https://gilv93.github.io/NETFLUX',
+			code: 'https://github.com/gilv93/NETFLUX'
+		},
+		{
+			name: 'Portfolio',
+			image: '../static/images/portfolio.png',
+			description: 'My portfolio site created using using React.',
+			demo: 'https://gilv93.github.io/portfolio',
+			code: 'https://github.com/gilv93/portfolio'
+		}
+	]
+
+
  
 	const skillSet = () => {
 		return (
@@ -47,6 +66,22 @@ const Projects = () => {
 		)
 	}
 
+	const projectSet = () => {
+		return (
+			projects.map((project) => {
+				return (
+					<div className='project-cont' key ={project.name}>
+						<img src={project.image} alt={project.name}></img>
+						<p>{project.name}</p>
+						<p>{project.description}</p>
+						<a href={project.demo}>Demo</a>
+						<a href={project.code}>Code</a>
+					</div>
+				)
+			})
+		)
+	}
+
 	return (
 		<div className='projects' id='Projects-sec'>
 			<h3>My Projects</h3>
@@ -55,6 +90,10 @@ const Projects = () => {
 				<h4>Skills</h4>
 				<div className='skills'>
 					{skillSet()}
+				</div>
+				<h4>Projects</h4>
+				<div className='projects-sec'>
+					{projectSet()}
 				</div>
 			</div>
 		</div>
