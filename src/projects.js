@@ -72,11 +72,11 @@ const Projects = () => {
 				return (
 					<div className='project-cont' key ={project.name}>
 						<img src={project.image} alt={project.name}></img>
-						<p style={{color: '#F17300','font-style': 'italic'}}>{project.name}</p>
+						<p style={{ 'font-size': '1.2em',color: '#F17300','font-style': 'italic', 'font-weight': '600', 'margin-top': '0.5em'}}>{project.name}</p>
 						<p>{project.description}</p>
 						<div className='links'>
-							<a href={project.demo} target='_blank'>Demo</a>
-							<a href={project.code} target='_blank'>Code</a>
+							<a href={project.demo} target='_blank'>View Demo</a>
+							<a href={project.code} target='_blank'>View Code</a>
 						</div>
 					</div>
 				)
