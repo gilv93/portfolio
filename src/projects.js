@@ -37,14 +37,14 @@ const Projects = () => {
 	const projects = [
 		{
 			name: 'NETFLUX',
-			image: '../static/images/NETFLUX.png',
+			image: '%PUBLIC_URL%/assets/images/NETFLUX.png',
 			description: 'A netflix clone I made using React. It utilizes the TMDB(The Movie Database) and Youtube API.',
 			demo: 'https://gilv93.github.io/NETFLUX',
 			code: 'https://github.com/gilv93/NETFLUX'
 		},
 		{
 			name: 'Portfolio',
-			image: '../static/images/portfolio.png',
+			image: '%PUBLIC_URL%/assets/images/portfolio.png',
 			description: 'My portfolio site created using using React.',
 			demo: 'https://gilv93.github.io/portfolio',
 			code: 'https://github.com/gilv93/portfolio'
