@@ -65,10 +65,21 @@
 	}
 
 	.projects-sec {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-		img {
-			height: 5em;
-			width: 8em;
+		.project-cont {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				height: 25vh;
+				width: 90vw;
+			}
 		}
 	}
 }
