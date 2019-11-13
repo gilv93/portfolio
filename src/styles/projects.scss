@@ -65,10 +65,7 @@
 	}
 
 	.projects-sec {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		height: 100%;
 
 		.project-cont {
 			display: flex;
@@ -79,6 +76,13 @@
 			img {
 				height: 25vh;
 				width: 90vw;
+			}
+
+			.links {
+				display: flex;
+				width: 100%;
+				justify-content: space-evenly;
+				margin: 1em;
 			}
 		}
 	}
