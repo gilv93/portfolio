@@ -50,7 +50,7 @@ const Projects = () => {
 			name: 'Portfolio',
 			image: 'assets/images/portfolio.png',
 			description: 'My portfolio site created using React.',
-			demo: 'https://gilv93.github.io/portfolio',
+			demo: 'NA',
 			code: 'https://github.com/gilv93/portfolio'
 		},
 		{
