@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './styles/App.scss';
 import Header from './header'
 import Buttons from './buttons'
