@@ -99,7 +99,7 @@ const Projects = () => {
 		<div className='projects' id='Projects-sec'>
 			<h3>My Projects</h3>
 			<div className='skills-sec'>
-				<p>A quick overview of my favorite tools and projects:</p>
+				<p>A quick overview of my primary skills and projects:</p>
 				<h4>Skills</h4>
 				<div className='skills'>
 					{skillSet()}
