@@ -3,6 +3,7 @@ import './styles/App.scss';
 import Header from './header'
 import Buttons from './buttons'
 import Text from './text'
+import Footer from './footer'
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
 				<Buttons category={category} titles={titles} click={change} />
 			</div>
 			<Text category={category} />
+			<Footer />
 		</div>
 	);
 }
