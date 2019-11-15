@@ -20,20 +20,26 @@
 		white-space: nowrap;
 		letter-spacing: 0.1em;
 		animation: 
-			typing 5.5s steps(15) infinite,
+			typing 7s steps(15) infinite,
 			blinking 0.75s infinite;
 		
 		@keyframes typing {
 			0% {
 				width: 0;
 			}
-			25% {
-				width: 100%;
+			16.7% {
+				width: 0;
+			}
+			33% {
+				width: 50%;
 			}
 			50% {
 				width: 100%;
 			}
-			75% {
+			67% {
+				width: 50%;
+			}
+			83% {
 				width: 0;
 			}
 			100% {
@@ -49,6 +55,12 @@
 				border-color: transparent;
 			}
 		}
+
+		@media only screen and (min-width: 1000px) {
+			animation: 
+				typing 10s steps(50) infinite,
+				blinking 0.75s infinite;
+		}
 	}
 
 	h2 {
@@ -58,5 +70,13 @@
 		margin: 0;
 		font-style: italic;
 		color: #F17300;
+	}
+
+	@media only screen and (max-height: 520px) and (orientation: landscape) {
+		margin-top: 5vh;
+	}
+
+	@media only screen and (min-width: 1000px) {
+		margin-top: 3vh;
 	}
 }

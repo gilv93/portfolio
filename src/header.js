@@ -12,12 +12,11 @@ const Header = () => {
 		'G.'
 	]
 
-
 	useEffect(() => {
 		const name = document.getElementById('name')
 		let num = 1
 		const select = (event) => {
-			if (event.animationName === 'typing') { 
+			if (event.animationName === 'typing' || event.animationName === undefined) { 
 				const check = () => {
 					if (num < names.length) {
 						let newText = names[num]

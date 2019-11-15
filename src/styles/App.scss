@@ -14,4 +14,12 @@
 		width: 90vw;
 		margin: 1.5em auto;
 	}
+
+	@media only screen and (max-height: 520px) and (orientation: landscape) {
+		overflow-y: scroll;
+
+		hr {
+			margin: 0.5em auto;
+		}
+	}
 }

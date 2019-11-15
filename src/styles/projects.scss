@@ -71,6 +71,23 @@
 			img {
 				height: 25vh;
 				width: 90vw;
+
+				@media only screen and (max-height: 520px) and (orientation: landscape) {
+					height: 80vh;
+				}
+
+				@media only screen and (min-width: 451px) and (max-width: 750px) {
+					height: 40vh;
+				}
+
+				@media only screen and (min-width: 750px) and (max-width: 1000px) {
+					height: 60vh;
+				}
+
+				@media only screen and (min-width: 1000px) {
+					height:60vh;
+					width: 60vw;
+				}
 			}
 
 			.links {

@@ -23,4 +23,10 @@
 		}
 	}
 
+	@media only screen and (max-height: 520px) and (orientation: landscape) {
+		.default {
+			margin-top: 2em;
+		}
+	}
+
 }
